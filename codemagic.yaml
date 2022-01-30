@@ -1,0 +1,5 @@
+workflows:
+  ios_ci:
+    name: ios_ci workflow
+    scripts:
+        - echo "iOS Continuous Integration!"
