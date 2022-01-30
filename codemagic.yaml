@@ -1,5 +1,8 @@
 workflows:
   ios_ci:
-    name: ios_ci workflow
+    name: ios_ci Pipeline
     scripts:
-        - echo "iOS Continuous Integration!"
+        - name: CICD Started
+        script: echo "iOS Continuous Integration!"
+        - name: Build ios_ci
+        script: xcodebuild build -workspace "ios_ci.xcworkspace" -scheme "ios_ci" CODE_SIGN_INDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
